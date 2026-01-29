@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "149779929584",
+    "project_id": "bagisyap",
+    "storage_bucket": "bagisyap.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149779929584:android:2b35f46255bc5947b46535",
+        "android_client_info": {
+          "package_name": "com.example.bagisyap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo2pnKRBscv1Z0jvNMlmytNBQDtI8LtMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

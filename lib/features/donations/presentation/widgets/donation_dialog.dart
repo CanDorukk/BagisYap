@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 import 'package:bagisyap/core/constants/app_sizes.dart';
@@ -38,42 +39,41 @@ class DonationDialog extends StatelessWidget {
               const SizedBox(height: AppSizes.paddingMedium),
               InfoText(text: donation.extraInfo!),
             ],
-            if (donation.url != null) ...[
+            if (donation.donationUrl != null) ...[
               const SizedBox(height: AppSizes.paddingMedium),
               FilledButton.icon(
-                onPressed: () => UrlLauncherHelper.openUrl(donation.url!),
+                onPressed: () => UrlLauncherHelper.openUrl(donation.donationUrl!),
                 icon: const Icon(Icons.open_in_new, size: 18),
                 label: const Text('Bağış sayfasına git'),
               ),
             ],
-            if (donation.sourceUrl != null || donation.sourceLabel != null) ...[
-              const SizedBox(height: AppSizes.paddingLarge),
-              const Divider(height: 1),
-              const SizedBox(height: AppSizes.paddingSmall),
-              Text(
-                donation.sourceLabel ?? 'Kaynak',
+            const SizedBox(height: AppSizes.paddingLarge),
+            const Divider(height: 1),
+            const SizedBox(height: AppSizes.paddingSmall),
+            RichText(
+              text: TextSpan(
                 style: theme.textTheme.bodySmall?.copyWith(
                   color: theme.colorScheme.onSurfaceVariant,
                 ),
-              ),
-              if (donation.sourceUrl != null) ...[
-                const SizedBox(height: 4),
-                InkWell(
-                  onTap: () => UrlLauncherHelper.openUrl(donation.sourceUrl!),
-                  borderRadius: BorderRadius.circular(4),
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 2),
-                    child: Text(
-                      donation.sourceUrl!,
-                      style: theme.textTheme.bodySmall?.copyWith(
-                        color: theme.colorScheme.primary,
-                        decoration: TextDecoration.underline,
-                      ),
+                children: [
+                  const TextSpan(text: 'Bilgiler "'),
+                  TextSpan(
+                    text: donation.title,
+                    style: theme.textTheme.bodySmall?.copyWith(
+                      color: theme.colorScheme.primary,
+                      decoration: TextDecoration.underline,
                     ),
+                    recognizer: donation.infoUrl != null &&
+                            donation.infoUrl!.isNotEmpty
+                        ? (TapGestureRecognizer()
+                          ..onTap = () =>
+                              UrlLauncherHelper.openUrl(donation.infoUrl!))
+                        : null,
                   ),
-                ),
-              ],
-            ],
+                  const TextSpan(text: '" resmi internet sitesinden alınmıştır.'),
+                ],
+              ),
+            ),
           ],
         ),
       ),

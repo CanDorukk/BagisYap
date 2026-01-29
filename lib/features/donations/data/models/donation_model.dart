@@ -8,6 +8,10 @@ class DonationModel extends DonationEntity {
     required super.description,
     super.url,
     super.imageUrl,
+    super.extraInfo,
+    super.sourceUrl,
+    super.sourceLabel,
+    super.categoryId,
   });
 
   factory DonationModel.fromJson(Map<String, dynamic> json) {
@@ -17,6 +21,10 @@ class DonationModel extends DonationEntity {
       description: json['description'] as String? ?? '',
       url: json['url'] as String?,
       imageUrl: json['imageUrl'] as String?,
+      extraInfo: json['extraInfo'] as String?,
+      sourceUrl: json['sourceUrl'] as String?,
+      sourceLabel: json['sourceLabel'] as String?,
+      categoryId: json['categoryId'] as String?,
     );
   }
 
@@ -26,5 +34,9 @@ class DonationModel extends DonationEntity {
         'description': description,
         'url': url,
         'imageUrl': imageUrl,
+        'extraInfo': extraInfo,
+        'sourceUrl': sourceUrl,
+        'sourceLabel': sourceLabel,
+        'categoryId': categoryId,
       };
 }

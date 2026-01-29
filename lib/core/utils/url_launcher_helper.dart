@@ -8,7 +8,13 @@ class UrlLauncherHelper {
   static Future<bool> openUrl(String url) async {
     final uri = Uri.tryParse(url);
     if (uri == null) return false;
-    if (!await launcher.canLaunchUrl(uri)) return false;
-    return launcher.launchUrl(uri, mode: launcher.LaunchMode.externalApplication);
+    try {
+      return await launcher.launchUrl(
+        uri,
+        mode: launcher.LaunchMode.externalApplication,
+      );
+    } catch (_) {
+      return false;
+    }
   }
 }

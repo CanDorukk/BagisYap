@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'package:bagisyap/core/constants/app_sizes.dart';
+
 import '../../domain/donation_entity.dart';
-import '../../../../core/constants/app_sizes.dart';
 
 /// Tek bir bağışı gösteren kart widget'ı.
 class DonationCard extends StatelessWidget {
@@ -16,28 +17,92 @@ class DonationCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Card(
+      elevation: 2,
+      clipBehavior: Clip.antiAlias,
       child: InkWell(
         onTap: onTap,
-        borderRadius: BorderRadius.circular(AppSizes.radiusMedium),
         child: Padding(
           padding: const EdgeInsets.all(AppSizes.paddingMedium),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Text(
-                donation.title,
-                style: Theme.of(context).textTheme.titleMedium,
+          child: IntrinsicHeight(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                SizedBox(
+                  width: 72,
+                  child: Container(
+                  decoration: donation.imageUrl != null && donation.imageUrl!.isNotEmpty
+                      ? BoxDecoration(
+                          borderRadius: BorderRadius.circular(AppSizes.radiusMedium),
+                        )
+                      : BoxDecoration(
+                          color: theme.colorScheme.surfaceContainerHighest,
+                          borderRadius: BorderRadius.circular(AppSizes.radiusMedium),
+                        ),
+                  clipBehavior: Clip.antiAlias,
+                  child: Center(
+                    child: donation.imageUrl != null && donation.imageUrl!.isNotEmpty
+                        ? Image.network(
+                            donation.imageUrl!,
+                            fit: BoxFit.contain,
+                            errorBuilder: (_, __, ___) => Icon(
+                              Icons.volunteer_activism,
+                              color: theme.colorScheme.onSurface,
+                              size: 28,
+                            ),
+                          )
+                        : Icon(
+                            Icons.volunteer_activism,
+                            color: theme.colorScheme.onSurface,
+                            size: 28,
+                          ),
+                  ),
+                ),
               ),
-              const SizedBox(height: AppSizes.paddingSmall),
-              Text(
-                donation.description,
-                style: Theme.of(context).textTheme.bodyMedium,
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
+              const SizedBox(width: AppSizes.paddingMedium),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      donation.title,
+                      style: theme.textTheme.titleMedium?.copyWith(
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    const SizedBox(height: AppSizes.paddingSmall),
+                    Text(
+                      donation.description,
+                      style: theme.textTheme.bodyMedium?.copyWith(
+                        color: theme.colorScheme.onSurfaceVariant,
+                      ),
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    const SizedBox(height: AppSizes.paddingSmall),
+                    Row(
+                      children: [
+                        Text(
+                          'Detay',
+                          style: theme.textTheme.labelMedium?.copyWith(
+                            color: theme.colorScheme.primary,
+                          ),
+                        ),
+                        const SizedBox(width: 4),
+                        Icon(
+                          Icons.arrow_forward_ios,
+                          size: 12,
+                          color: theme.colorScheme.primary,
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ],
+            ),
           ),
         ),
       ),

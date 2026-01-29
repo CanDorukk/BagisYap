@@ -4,25 +4,22 @@ class DonationEntity {
     required this.id,
     required this.title,
     required this.description,
-    this.url,
+    this.donationUrl,
     this.imageUrl,
     this.extraInfo,
-    this.sourceUrl,
-    this.sourceLabel,
+    this.infoUrl,
     this.categoryId,
   });
 
   final String id;
   final String title;
   final String description;
-  final String? url;
+  final String? donationUrl;
   final String? imageUrl;
   /// Ek bilgi metni (örn. SMS ile bağış açıklaması).
   final String? extraInfo;
-  /// Kaynak site URL (örn. "Veriler ... sitesinden alınmıştır" linki).
-  final String? sourceUrl;
-  /// Kaynak etiket metni.
-  final String? sourceLabel;
+  /// Dialog altında "Bilgiler resmi olarak X tarafından alınmıştır" altındaki linkin URL'i.
+  final String? infoUrl;
   /// Kategori (government, foundation, association).
   final String? categoryId;
 }

@@ -6,25 +6,27 @@ class DonationModel extends DonationEntity {
     required super.id,
     required super.title,
     required super.description,
-    super.url,
+    super.donationUrl,
     super.imageUrl,
     super.extraInfo,
-    super.sourceUrl,
-    super.sourceLabel,
+    super.infoUrl,
     super.categoryId,
   });
 
+  /// Firestore doc.data() veya JSON'dan oluşturur.
   factory DonationModel.fromJson(Map<String, dynamic> json) {
+    String? _str(dynamic v) =>
+        v == null ? null : (v is String ? v : v.toString());
+
     return DonationModel(
-      id: json['id'] as String? ?? '',
-      title: json['title'] as String? ?? '',
-      description: json['description'] as String? ?? '',
-      url: json['url'] as String?,
-      imageUrl: json['imageUrl'] as String?,
-      extraInfo: json['extraInfo'] as String?,
-      sourceUrl: json['sourceUrl'] as String?,
-      sourceLabel: json['sourceLabel'] as String?,
-      categoryId: json['categoryId'] as String?,
+      id: _str(json['id']) ?? '',
+      title: _str(json['title']) ?? '',
+      description: _str(json['description']) ?? '',
+      donationUrl: _str(json['donationUrl']),
+      imageUrl: _str(json['imageUrl']),
+      extraInfo: _str(json['extraInfo']),
+      infoUrl: _str(json['infoUrl']),
+      categoryId: _str(json['categoryId']),
     );
   }
 
@@ -32,11 +34,10 @@ class DonationModel extends DonationEntity {
         'id': id,
         'title': title,
         'description': description,
-        'url': url,
+        'donationUrl': donationUrl,
         'imageUrl': imageUrl,
         'extraInfo': extraInfo,
-        'sourceUrl': sourceUrl,
-        'sourceLabel': sourceLabel,
+        'infoUrl': infoUrl,
         'categoryId': categoryId,
       };
 }

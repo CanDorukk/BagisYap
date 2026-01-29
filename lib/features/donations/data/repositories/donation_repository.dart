@@ -1,12 +1,12 @@
 import '../../domain/donation_entity.dart';
-import '../datasources/donation_remote_datasource.dart';
+import '../datasources/donation_firestore_datasource.dart';
 
-/// Bağış verisi için repository.
+/// Bağış verisi için repository (Firestore).
 class DonationRepository {
-  DonationRepository({DonationRemoteDatasource? datasource})
-      : _datasource = datasource ?? DonationRemoteDatasource();
+  DonationRepository({DonationFirestoreDatasource? datasource})
+      : _datasource = datasource ?? DonationFirestoreDatasource();
 
-  final DonationRemoteDatasource _datasource;
+  final DonationFirestoreDatasource _datasource;
 
   Future<List<DonationEntity>> getDonations() async {
     final models = await _datasource.getDonations();

@@ -63,10 +63,13 @@ Her belge bir bağış kaydıdır. Alan adları **tam olarak** aşağıdaki gibi
 | `categoryId` | string | Hayır | Sekme: `government` = Devlet Kurumları, `foundation` = Vakıflar, `association` = Dernekler. |
 | `extraInfo` | string | Hayır | SMS / ek bilgi. Varsa kartta ikonla gösterilir; yoksa alan eklemeyin veya boş bırakın. |
 | `infoUrl` | string | Hayır | Dialog en altındaki "Bilgiler \"X\" resmi internet sitesinden alınmıştır." cümlesinde X (başlık) tıklanınca açılacak link. |
+ | `donationOptions` | array (map) | Hayır | Birden fazla bağış türü (örn. Kızılay: aşevi, kan). Varsa karta tıklanınca önce "Bağış türünü seçin" listesi açılır; **en üstte "Genel"** gelir (Genel = belge seviyesindeki title, description, donationUrl, extraInfo, infoUrl). Her öğe bir **map**; alanlar: `label`, `url`, `description` (isteğe bağlı), `extraInfo`, `infoUrl` (isteğe bağlı). Seçilen öğenin alanları dialog’da gösterilir (dialog’da görsel yok). |
 
 **Belge ID:** Otomatik ID kullanın; uygulama `doc.id` ile okur.
 
 **Not:** `extraInfo` sadece SMS / ek bilgisi olan bağışlarda doldurulur. Diğerlerinde alan eklemeyebilir veya boş bırakabilirsiniz.
+
+**donationOptions:** Kızılay gibi birden fazla bağış türü olan kurumlarda kullanın. Karta tıklanınca listede **en üstte "Genel"** görünür; Genel seçilirse normal kart (belgedeki title, description, donationUrl, extraInfo, infoUrl) dialog’da gösterilir. Diğer satırlar donationOptions içindeki her map’in `label` değeridir; birini seçince o map’teki `description`, `url`, `extraInfo`, `infoUrl` dialog’da kullanılır. Tek linkli kartlarda bu alanı eklemeyin; `donationUrl` kullanın.
 
 ### Örnek belge (Firestore Console’da)
 
@@ -81,6 +84,20 @@ Koleksiyon: **donations** → **Belge ekle** → **Otomatik ID** → Aşağıdak
 | categoryId | string | foundation |
 | extraInfo | string | SMS ile bağış: "Mesajım Mehmetçik İçin Olsun" yazıp 1234'e gönderin. |
 | infoUrl | string | https://www.mehmetcik.org.tr |
+
+**Çoklu bağış türü örneği (Kızılay):** Aynı kartta birden fazla seçenek için `donationOptions` ekleyin. Firestore’da alan tipi **array**, her öğe bir **map**. Map içinde dialog’da kullandığımız alanlar: `label`, `url`, `description`, `extraInfo`, `infoUrl` (hepsi isteğe bağlı; girilmezse belge seviyesindeki değer kullanılır; özellikle infoUrl option’da yoksa ana yapıdaki infoUrl kullanılır). Dialog’da görsel gösterilmediği için option’da `imageUrl` yok. Listede **en üstte "Genel"** uygulama tarafından eklenir; Genel seçilince belgedeki title, description, donationUrl, extraInfo, infoUrl gösterilir.
+
+Belge seviyesi: title, description, donationUrl, imageUrl, categoryId, infoUrl, extraInfo (Genel için). donationOptions array’indeki her map örneği:
+
+| Map içi alan | Type | Açıklama |
+|--------------|------|----------|
+| label | string | Listede görünen ad (örn. "Kızılay aşevi bağış") |
+| url | string | Bu türün bağış sayfası linki |
+| description | string | (İsteğe bağlı) Bu türe özel açıklama |
+| extraInfo | string | (İsteğe bağlı) SMS / ek bilgi |
+| infoUrl | string | (İsteğe bağlı) "Bilgiler X tarafından alınmıştır" linki. Girilmezse belge seviyesindeki infoUrl kullanılır. |
+
+Örnek: `donationOptions` = [ { "label": "Kızılay aşevi bağış", "url": "https://...", "description": "Aşevi bağışı", "extraInfo": "SMS: ...", "infoUrl": "https://..." }, { "label": "Kızılay kan bağışı", "url": "https://...", "description": "Kan bağışı", "infoUrl": "https://..." } ]
 
 ---
 

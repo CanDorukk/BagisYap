@@ -1,0 +1,166 @@
+[
+  {
+    "id": "afad",
+    "title": "AFAD",
+    "description": "Afad yardım kampanyalarına ulaşmak için linke tıklayabilirsiniz.",
+    "donationUrl": "https://www.afad.gov.tr/yardim-kampanyalari",
+    "imageUrl": "https://www.afad.gov.tr/kurumlar/afad.gov.tr/Kurumsal-Kimlik/Logolar/PNG/AFAD-Logo-Beyaz.png",
+    "categoryId": "government",
+    "extraInfo": "Yardım kampanyalarına bakarak istediğiniz türde bağış yapabilirsiniz.",
+    "infoUrl": "https://www.afad.gov.tr",
+    "donationOptions": [
+      {
+        "label": "Afad Deprem Bağış",
+        "url": "https://www.afad.gov.tr/yangin-ve-sel-afeti-yardim-kampanyasi#:~:text=Kampanyaya%20destek%20vermek%20isteyen%20vatandaşlarımız,hesap%20numaraları%20üzerinden%20bağış%20yapabilecektir.",
+        "description": "Ülkemizde meydana gelen yangınlar ve seller, milletimizi derinden etkilemiştir. Bu afetlerin ardından hem yurt içinden hem de yurt dışından birçok vatandaşımız yardım etmek amacıyla AFAD'a yoğun şekilde başvurmuştur. Bu vicdani talebe karşılık olarak başlatılan \"Yangın ve Sel Afeti Yardım Kampanyası\", afetler sonrası yürütülen çalışmalara destek olmak amacıyla sürekli açık tutulacaktır.",
+        "extraInfo": "Kampanyaya destek vermek isteyen vatandaşlarımız, \"YANGIN\" ya da \"SEL\" yazarak 1866'ya SMS gönderebilecek (1 SMS bedeli: 50 TL'dir) ya da aşağıda yer alan hesap numaraları üzerinden bağış yapabilecektir.",
+        "infoUrl": "https://www.afad.gov.tr/yangin-ve-sel-afeti-yardim-kampanyasi#:~:text=Kampanyaya%20destek%20vermek%20isteyen%20vatandaşlarımız,hesap%20numaraları%20üzerinden%20bağış%20yapabilecektir."
+      }
+    ]
+  },
+  {
+    "id": "mehmetcik-vakfi",
+    "title": "Mehmetçik Vakfı",
+    "description": "TSK Mehmetçik Vakfı – Şehit ve gazi ailelerine destek.",
+    "donationUrl": "https://www.mehmetcik.org.tr/bagis",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/tr/5/50/TSK_Mehmetçik_Vakfı_logo.png?20210429085912",
+    "categoryId": "foundation",
+    "extraInfo": "SMS ile bağış: MEHMETÇİK yazıp 2582'ye gönderin.",
+    "infoUrl": "https://www.mehmetcik.org.tr"
+  },
+  {
+    "id": "turkiye-diyanet-vakfi",
+    "title": "Türkiye Diyanet Vakfı",
+    "description": "Türkiye Diyanet Vakfı genel bağış, link içerisinde aşşağıya kaydırarak diğer bağış türlerine ulaşabilirsiniz.",
+    "donationUrl": "https://bagis.tdv.org",
+    "imageUrl": "https://tdvmedia.blob.core.windows.net/tdv/MedyaOdası/Kurumsal_Kimlik/TDV_Kurumsal_Logo01.png",
+    "categoryId": "foundation",
+    "infoUrl": "https://bagis.tdv.org"
+  },
+  {
+    "id": "jandarma-asayis-vakfi",
+    "title": "Jandarma Asayiş Vakfı",
+    "description": "Vakfın amacına uygun bağış, yardım ve mal vasiyeti Vakıf tarafından kabul edilir. Uygun bulunanların kabul işlemleri Yönetim Kurulu tarafından yapılarak, Vakıf mal varlığına intikal ettirilir. Nakdi bağışlar; Vakıf Genel Müdürlüğü tarafından temin edilerek dağıtılan, seri numaralı, soğuk damgalı bağış makbuzları ile kabul edilebileceği gibi doğrudan bankalara açılan Vakfın bağış hesaplarına yatırılmak suretiyle de yapılabilir. Bağışlara Verilecek Armağanlar: Bağış alındı belgesi, Teşekkür mektubu, Onur belgesi, Vakıf şilti, Madalya ve beratı, Kişinin fotoğrafını asmak suretiyle onurlandırma, Kişinin ismi yazılı plaket ile onurlandırmayı kapsar.",
+    "donationUrl": "http://jav.org.tr/bagis/",
+    "imageUrl": "http://jav.org.tr/wp-content/uploads/2023/12/cropped-cropped-janasvak-logo-192x192-1-100x100.png",
+    "categoryId": "foundation",
+    "extraInfo": "Arzu eden vatandaşlarımız, TÜRK TELEKOM, TURKCELL veya VODAFONE GSM operatörlerine ait faturalı telefonlardan 1839'a BAĞIŞ yazıp kısa mesaj (SMS) göndererek Jandarma Vakfına 50,00 TL tutarında bağışta bulunabilirler.",
+    "infoUrl": "https://janasvak.org.tr"
+  },
+  {
+    "id": "tskgv",
+    "title": "TÜRK SİLAHLI KUVVETLERİNİ GÜÇLENDİRME VAKFI",
+    "description": "Bağışlarınızla Türk Silahlı Kuvvetleri ve Savunma Sanayiimiz desteklenmektedir.",
+    "donationUrl": "https://bagis.tskgv.org.tr/#",
+    "imageUrl": "https://bagis.tskgv.org.tr/logo.png",
+    "categoryId": "foundation",
+    "extraInfo":"Tüm GSM operatörleri üzerinden BAĞIŞ yazıp 1987'ye SMS göndererek bağış yapabilirsiniz.",
+    "infoUrl": "https://bagis.tskgv.org.tr/bagis-turleri#"
+  },
+  {
+    "id": "tptgv",
+    "title": "Türk Polis Teşkilatını Güçlendirme Vakfı",
+    "description": "Tüm bağışçılarımıza, vatan uğruna canını feda etmiş kahramanlarımızın ailelerine umut ve güç verdikleri için teşekkür ediyoruz.",
+    "donationUrl": "https://bagis.tptgv.org.tr",
+    "imageUrl": "https://bagis.tptgv.org.tr/img/logoyazili_beyaz.png",
+    "categoryId": "foundation",
+    "infoUrl": "https://tptgv.org.tr"
+  },
+  {
+    "id": "kizilay",
+    "title": "Türk Kızılay",
+    "description": "Yapacağın bağışlarla hem ihtiyaç sahiplerinin hem de kendi başına yemek yapamayan engelli, hasta ve yaşlılarımızın yanında ol!",
+    "donationUrl": "https://bagis.kizilay.org.tr/tr?_gl=1*qo8hwi*_gcl_au*NTA1OTI1MjQzLjE3Njk3MjQxNzM.*_ga*MTA4NzkyNzcyNS4xNzY5NzI0MTc0*_ga_DGKVRR6VRG*czE3Njk3MjQxNzMkbzEkZzEkdDE3Njk3Mjc0NzkkajU2JGwwJGgw",
+    "imageUrl": "https://www.kizilay.org.tr/assets/images/logokzly.png",
+    "categoryId": "foundation",
+    "extraInfo": "",
+    "infoUrl": "https://www.kizilay.org.tr",
+    "donationOptions": [
+      {
+        "label": "Kızılay aşevi bağış",
+        "url": "https://bagis.kizilay.org.tr/tr/bagis/bagisyap/13/asevi-bagisi",
+        "description": "Aşevi bağışı ile ihtiyaç sahiplerine destek.",
+        "extraInfo": "Yapacağın bağışlarla hem ihtiyaç sahiplerinin hem de kendi başına yemek yapamayan engelli, hasta ve yaşlılarımızın yanında ol!"
+      },
+      {
+        "label": "Zekat",
+        "url": "https://bagis.kizilay.org.tr/tr/bagis/bagisyap/9/zekat",
+        "description": "Zekatınız, bir anneye umut, bir öğrencinin eğitimine destek, bir ailenin sofrasına sıcak bir yemek olabilir.",
+        "extraInfo": ""
+      },
+      {
+        "label": "Fitre",
+        "url": "https://bagis.kizilay.org.tr/tr/bagis/bagisyap/64/fitre",
+        "description": "Fitre, Ramazan orucunu tutup bayrama ulaşmanın bir şükrü ve ihtiyaç sahiplerine uzanan bir yardım elidir. Türk Kızılay olarak, fitrelerinizi ülkemizde ve dünyanın dört bir yanındaki ihtiyaç sahiplerine ulaştırıyor, bayram sevincini ihtiyaç sahipleriyle paylaşıyoruz.",
+        "extraInfo": "Diyanet İşleri Başkanlığı tarafından belirlenen 2026 fitre miktarı ₺240'dir. FİTRE yazıp 1877'ye SMS göndererek kolayca fitrenizi bağışlayabilirsiniz. (1 SMS = ₺240)"
+      },
+      {
+        "label": "Fidye",
+        "url": "https://bagis.kizilay.org.tr/tr/bagis/bagisyap/128/fidye",
+        "description": "Fidye, güçsüzlük, düşkünlük gibi durumlardan dolayı bazı ibadetlerin yerine getirilememesi ya da ibadetin edası sırasında birtakım kusurların işlenmesi halinde ödenen dini-mali bir yükümlülüktür.",
+        "extraInfo": "Kızılay'a yapacağınız fidye bağışlarınız, Ramazan ayında başta deprem bölgesinde olmak üzere dünyada ve ülkemizde bulunan ihtiyaç sahiplerine ulaştırılmaktadır. Diyanet İşleri Başkanlığı tarafından belirlenen fidye miktarı 240 ₺'dir. FİDYE yazıp 1877'ye SMS göndererek de destek olabilirsiniz. (1 SMS=240 TL) Siz değerli iyilik elçilerimiz belirlenen miktardan (240₺'den) az olmamak şartıyla dilediği kadar fidye bağışında bulunabilirsiniz."
+      },
+      {
+        "label": "Sadaka",
+        "url": "https://bagis.kizilay.org.tr/tr/bagis/bagisyap/456/sadaka",
+        "description": "Sadaka bağışları, toplumsal dayanışmanın en güzel örneklerinden biridir. İhtiyaç sahiplerine ulaştırılan sadakalar, onların günlük yaşamlarını kolaylaştırırken, sosyal hayata daha aktif katılımlarını da sağlar. Sadaka bağışları sayesinde; yiyecek, giyecek, barınma ve eğitim gibi temel ihtiyaçlar karşılanır.",
+        "extraInfo": "SADAKA yazıp 2868'e göndererek 50₺ ihtiyaç sahiplerine yardımda bulunabilirsiniz. Türk Kızılay olarak, destekleriniz için tüm ihtiyaç sahipleri adına teşekkür ederiz. Ayrıca diğer insani yardım çalışmalarına bağışta bulunarak da Kızılay'a destek olabilirsiniz."
+      },
+      {
+        "label": "Yurt İçi Gıda Yardımı",
+        "url": "https://bagis.kizilay.org.tr/tr/bagis/bagisyap/181/yurt-ici-gida-yardimi",
+        "description": "Kızılay, hayırseverlerin destekleriyle yüz binlerce ihtiyaç sahibi ailenin sofrasına umut oluyor. Başta deprem bölgesi olmak üzere Türkiye'nin dört bir yanında yürütülen gıda yardımı faaliyetleri, beslenme konusunda zorluk yaşayan vatandaşlarımızın temel ihtiyaçlarını karşılamaya devam ediyor.",
+        "extraInfo": "Siz de bir SMS ile destek olabilirsiniz. GIDA yazıp 2868'e göndererek 50₺ katkıda bulunabilir, bir ailenin sofrasına umut olabilirsiniz."
+      },
+      {
+        "label": "Yurt Dışı Gıda Yardımı",
+        "url": "https://bagis.kizilay.org.tr/tr/bagis/bagisyap/183/yurt-disi-gida-yardimi",
+        "description": "Birleşmiş Milletler (BM)'in yayınlamış olduğu \"Dünyada Gıda Güvenliği ve Beslenmenin Durumu\" raporuna göre dünya nüfusunun yaklaşık %10'unun açlıkla mücadele etmekte, 2,3 milyardan fazla insanın (toplam nüfusun %30'u) ise yıl boyunca yeterli gıdaya erişememektedir.",
+        "extraInfo": "Türk Kızılay değerli bağışlarınızla, yardımlarını yeterli gıdaya erişimi kısıtlı olan yüz binlerce ihtiyaç sahibine ulaştırmakta; Filistin, Yemen ve Somali gibi gönül coğrafyamız olan onlarca ülkede, bölge halkının beslenme alışkanlıkları dikkate alınarak gıda yardımı faaliyetleri yürütmektedir."
+      },
+      {
+        "label": "Türk Kızılay'a Nakdi Bağış - Genel Bağış",
+        "url": "https://bagis.kizilay.org.tr/tr/bagis/bagisyap/7/genel-bagis",
+        "description": "Türk Kızılay, 1868 yılından bu yana hayırsever halkımızdan aldığı güç ile ülkemizde ve dünyada insan ıstırabını dindirmek, insan onurunu korumak için çalışmaktadır. Kan, afet, uluslararası yardım, göç ve mülteci hizmetleri, sosyal hizmetler, sağlık, ilk yardım, eğitim, gençlik ve mineralli su işletmeleri alanlarında faaliyet göstermektedir.",
+        "extraInfo": "Kuruluşundan bugüne yürüttüğü insani yardım faaliyetleri ile milyonlarca insana ulaşan Türk Kızılay, bu çalışmalarını bağışçılarından aldığı güçle yerine getirmektedir. Siz de insani yardım faaliyetlerine nakdi bağışta bulanarak Kızılay'ın çalışmalarına destek olabilirsiniz. Nakdi bağışınızı Türk Lirası ve yabancı para cinsinden yapabilir, altın vb. nakde çevrilebilen ve nakit benzeri olarak tanımlanan finansal araçlar ile gerçekleştirebilirsiniz. Aynı zamanda \"BAĞIŞ\" yazıp 2868'e göndererek de 50₺ katkıda bulunabilirsiniz."
+      }
+    ]
+  },
+  {
+    "id": "turkiye-cumhuriyeti-aile-ve-sosyal-hizmetler-bakanligi",
+    "title": "Türkiye Cumhuriyeti Aile ve Sosyal Hizmetler Bakanlığı",
+    "description": "BAĞIŞ YAPANLARA SAĞLANAN KOLAYLIKLAR\n\nYukarıdaki hesaplara havale sırasında hiç bir ücret alınmamaktadır.\n\nBakanlığa yapacağınız bağış ve yardımlarınızı 31/7/2004 tarih ve 25539 sayılı resmi gazetede yayınlanan 5228 sayılı kanunun aşağıda belirtilen 28. maddesi ile GVK'nun 89'ncu maddesinde yer alan bağış ve yardım hükümleri yeniden düzenlenmiş ve kuruluşlarımıza yapılan ayni ve nakdi bağış ve yardımların tamamı gelir vergisi matrahının tespitinde, gelir vergisi beyannamesinde bildirilecek gelirlerden indirilmektedir.\n\n\"Madde 28- Sayılı Gelir Vergisi Kanununun 89 uncu maddesi başlığıyla birlikte aşağıdaki şekilde değiştirilmiştir.\"",
+    "donationUrl": "https://www.aile.gov.tr",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/T.C._Aile_ve_Sosyal_Hizmetler_Bakanlığı_logo.svg/960px-T.C._Aile_ve_Sosyal_Hizmetler_Bakanlığı_logo.svg.png",
+    "categoryId": "government",
+    "extraInfo": "Türk Lirası ya da Döviz cinsinden yapılabilecek bağışlar; \"Aile ve Sosyal Hizmetler Bakanlığı\" adına aşağıdaki örnek ibarelerde olduğu gibi belli bir amaç ve şart için kullanılmasını istemeleri halinde kuruluşlarımızda bakılanlara harcanabilecektir.\n\nHerhangi bir şart olmadan veya sadece \"bağış\" diyerek ödeme yapılırsa şartlı bağış olmaz \"çeşitli gelir\" hesabına ödenmiş olur. Bu şekilde yatırılan tutarlar Bakanlıkça değerlendirilerek genel ihtiyaçlar doğrultusunda kuruluşlarda bakılanlara harcanabilecektir.",
+    "infoUrl": "https://www.aile.gov.tr",
+    "donationOptions": [
+      {
+        "label": "Sosyal Yardımlaşma ve Dayanışma Vakıfları (SYDV)",
+        "url": "https://www.aile.gov.tr/iletisim/bakanlik-iletisim-bilgileri/sydv/",
+        "description": "Bulunduğunuz şehirdeki SYDV ile iletişime geçerek bağış yapmak için linke tıklayınız"
+      }
+    ]
+  },
+  {
+    "id": "yesilay",
+    "title": "Yeşilay",
+    "description": "Yapacağınız ₺100 bağış ile yaklaşık 10 öğrencinin bağımlılıklara karşı farkındalık kazanmasına destek olun.",
+    "donationUrl": "https://www.yesilay.org.tr/bagis-yap/",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Yeşilay_logo.svg/250px-Yeşilay_logo.svg.png",
+    "categoryId": "association",
+    "extraInfo": "Bağımsız bir dünya ve bağımsız bir gelecek için birlikte güçlüyüz! YESILAY YAZ. 2423'e. GÖNDER. SMS",
+    "infoUrl": "https://www.yesilay.org.tr"
+  },
+  {
+    "id": "akut",
+    "title": "AKUT",
+    "description": "Amatör bir ruh ve profesyonel çalışma ilkeleri ile 1996 yılından bu yana hayat kurtarmak için çalışan AKUT, bugüne kadar yetiştirdiği binlerce gönüllü; hayat kurtarma konusunda Gölcük, Tayvan, Van, Maraş ve diğer birçok lokasyonda görevlerini yerine getirdi. Bu faaliyetlerin tamamı ise sizin gibi değerli bağışçılar tarafından finanse ediliyor.",
+    "donationUrl": "https://www.akut.org.tr/bagis-yap",
+    "imageUrl": "https://www.akut.org.tr/images/site/akut-logo-siyah.png",
+    "categoryId": "association",
+    "extraInfo": "Faturalı hattınız varsa \"AKUT\" yazıp 2930'a kısa mesaj yazıp gönderebilirsiniz, böylece 100 TL'lik bağış tarafımıza ulaşabilir. Eğer faturasız hattınız varsa yine aynı yöntemi kullanabilirsiniz. Ancak telefonunuzun 100 TL'lik bakiyeye sahip olması gerekmektedir.",
+    "infoUrl": "https://www.akut.org.tr"
+  }
+]

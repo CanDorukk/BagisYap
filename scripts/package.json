@@ -1,0 +1,8 @@
+{
+  "name": "bagisyap-import",
+  "private": true,
+  "description": "donations.json'ı Firestore'a yükler",
+  "dependencies": {
+    "firebase-admin": "^13.6.0"
+  }
+}

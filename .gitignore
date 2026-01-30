@@ -43,7 +43,7 @@ app.*.map.json
 /android/app/release
 
 # Firebase / API anahtarları / gizli anahtarlar (asla repo'ya eklenmemeli)
-scripts/serviceAccountKey.json
+scripts/
 lib/firebase_options.dart
 android/app/google-services.json
 ios/Runner/GoogleService-Info.plist

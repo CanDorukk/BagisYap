@@ -14,8 +14,11 @@ class AppTheme {
           brightness: Brightness.dark,
         ),
         appBarTheme: const AppBarTheme(
-          centerTitle: true,
+          backgroundColor: Colors.transparent,
+          surfaceTintColor: Colors.transparent,
           elevation: 0,
+          scrolledUnderElevation: 0,
+          centerTitle: true,
         ),
         cardTheme: CardTheme(
           elevation: 2,

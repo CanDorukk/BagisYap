@@ -14,16 +14,16 @@ const List<DonationTab> donationTabs = [
   ),
   DonationTab(
     category: DonationCategory.foundation,
-    appBarTitle: 'Vakıflar (Kamu Yararına)',
+    appBarTitle: 'Vakıflar',
     label: 'Vakıflar',
     description: 'Kamu yararına vakıflar',
     icon: Icons.volunteer_activism,
   ),
   DonationTab(
     category: DonationCategory.association,
-    appBarTitle: 'Dernekler / Yardım Sandıkları',
+    appBarTitle: 'Dernekler',
     label: 'Dernekler',
-    description: 'Dernekler ve yardım sandıkları',
+    description: 'Dernekler',
     icon: Icons.handshake,
   ),
 ];

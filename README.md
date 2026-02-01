@@ -1,5 +1,6 @@
 # bagisyap
 
+![Vakıflar ekran görüntüsü](github-assets/vakif.jpeg)
 
 ## Yasal Uyarı
 Bu uygulama bağış toplamaz ve herhangi bir ödeme işlemi gerçekleştirmez.  

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 import 'package:bagisyap/core/constants/app_sizes.dart';
 
@@ -43,10 +44,15 @@ class DonationCard extends StatelessWidget {
                   clipBehavior: Clip.antiAlias,
                   child: Center(
                     child: donation.imageUrl != null && donation.imageUrl!.isNotEmpty
-                        ? Image.network(
-                            donation.imageUrl!,
+                        ? CachedNetworkImage(
+                            imageUrl: donation.imageUrl!,
                             fit: BoxFit.contain,
-                            errorBuilder: (_, __, ___) => Icon(
+                            placeholder: (_, __) => Icon(
+                              Icons.image,
+                              color: theme.colorScheme.onSurfaceVariant,
+                              size: 28,
+                            ),
+                            errorWidget: (_, __, ___) => Icon(
                               Icons.volunteer_activism,
                               color: theme.colorScheme.onSurface,
                               size: 28,

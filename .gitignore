@@ -60,3 +60,4 @@ Thumbs.db
 
 # Senin kişisel / kurulum dokümanların (Flutter README vb. takip edilsin)
 docs/
+data/
